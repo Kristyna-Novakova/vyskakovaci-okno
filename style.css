@@ -2,6 +2,14 @@ body {
   font: 16px/1.5 sans-serif;
 }
 
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
 .modal {
   width: 50vw;
   height: 40vh;
@@ -9,6 +17,11 @@ body {
   background-color: #b4eafb;
   border-radius: 10px;
   font-size: 30px;
+  position: relative;
+  left: 200px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 button {
@@ -20,11 +33,34 @@ button {
   color: black;
   width: 30px;
   border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .ok {
   background-color: #28a745;
   color: white;
+  position: absolute;
+  top: calc(20vh - (25px/2));
+  left: calc(25vw - 40px);
+
+}
+
+.sticky {
+  width: 50vw;
+  height: 40vh;
+  border: 15px solid #5bcef3;
+  background-color: #b4eafb;
+  border-radius: 10px;
+  font-size: 30px;
+  position: sticky;
+  z-index: 1;
+  top: 30px;
+  left: 25vw;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 /* sem přijdou tvoje styly */
